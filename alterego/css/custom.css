@@ -1,0 +1,160 @@
+body {
+    font-family: 'lunchtype24expanded_regular', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #000;
+  }
+  
+  .site-header {
+    background-color: #FB7915;
+  }
+  
+  .main-navigation {
+    margin: 32px 0 48px 64px;
+  }
+  
+  .main-menu a {
+    display: block;
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  /* override the default image styles */
+  .site-branding img {
+    width: auto !important;
+    height: auto !important;
+    display: block;
+    max-height: 100vh;
+  }
+  
+  .logo {
+    width: 330px;
+  }
+  
+  .products {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+  
+  .product a {
+    display: block;
+    padding: 32px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .product img {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    margin: auto;
+  }
+  
+  .product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 32px 24px;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+  }
+  
+  /* fade in our product info when we hover a product */
+  .product:hover .product-info {
+    opacity: 1
+  }
+
+  .product-info .woocommerce-loop-product__title {
+    font-size: 24px;
+    font-family: 'lunchtype24expanded_medium', sans-serif;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .product-info .price {
+    font-size: 20px;
+  }
+
+
+.woocommerce-products-header__title {
+  display: flex;
+  margin: 0 auto;
+  /* makes sure the words don't wrap onto new lines */
+  white-space: nowrap;
+  /* stops scroll bar on the page */
+  overflow: hidden;
+  /* essentially this is a bit of a visual trick */
+  transform: translateX(-50%);
+  width: 200%;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.marquee  {
+    display: block;
+    animation: marquee 2s linear infinite;
+    line-height: 1;
+    font-size: 32px;
+    padding: 32px;
+  }
+
+  /* 
+  1. When we hover over our navigation, fade out all of our links 
+  2. for the particular link that we're hovering on, keep it faded in 
+  3.when we're on a particular category, keep that link item fade in too
+  */
+  .main-menu .menu-item:hover a {
+      transition: opacity .2s ease;
+  }
+
+.archive .main-menu .menu-item a,
+  .main-menu:hover .menu-item a {
+      opacity: 0.25;
+  }
+
+
+  .main-menu .menu-item.current-menu-item a,
+  .main-menu .menu-item:hover a {
+      opacity: 1;
+  }
+
+  /* here we style our product page */
+  .single-product .product {
+      display: flex;
+      padding: 32px;
+  }
+
+  /* this stretches the image to fill the available space */
+  .woocommerce-product-gallery {
+      flex:auto;
+  }
+
+  /* with our product summary we want to constrain the with and add some padding */
+
+  .single-product .summary {
+      max-width: 390px;
+
+  }
+
+  /* here we write some basice style for our static pages */
+
+  .page-content {
+    max-width: 1220px;
+  }
+  
+  .header-page {
+      background-color: #fbbb28;
+      padding: 32px 64px;
+      margin-bottom: 64px;
+  }

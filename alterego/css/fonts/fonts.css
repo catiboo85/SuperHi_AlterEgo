@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'lunchtype22regular';
+  src:  url('fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
+        url('fonts/lunchtype22-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtype22medium';
+  src: url('fonts/lunchtype22-medium-webfont.woff2') format('woff2'),
+       url('fonts/lunchtype22-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtype22light';
+  src: url('fonts/lunchtype22-light-webfont.woff2') format('woff2'),
+       url('fonts/lunchtype22-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtype24expanded_regular';
+  src: url('fonts/lunchtype24-regular-expanded-webfont.woff2') format('woff2'),
+       url('fonts/lunchtype24-regular-expanded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtype24expanded_medium';
+  src: url('fonts/lunchtype24-medium-expanded-webfont.woff2') format('woff2'),
+       url('fonts/lunchtype24-medium-expanded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtype24expanded_light';
+  src: url('fonts/lunchtype24-light-expanded-webfont.woff2') format('woff2'),
+       url('fonts/lunchtype24-light-expanded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.regular {
+  font-family: 'lunchtype22regular', sans-serif;
+}
+
+.medium {
+  font-family: 'lunchtype22medium', sans-serif;
+}
+
+.light {
+  font-family: 'lunchtype22light', sans-serif;
+}
+
+.expanded-regular {
+  font-family: 'lunchtype24expanded_regular', sans-serif;
+}
+
+.expanded-medium {
+  font-family: 'lunchtype24expanded_medium', sans-serif;
+}
+
+.expanded-light {
+  font-family: 'lunchtype24expanded_light', sans-serif;
+}
